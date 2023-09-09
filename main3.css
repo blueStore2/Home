@@ -62,7 +62,7 @@
   border-right: 2px solid white;
 }
 body{
-  overflow: hidden;
+  overflow: visible;
 }
 
 @media (min-width:720px){
