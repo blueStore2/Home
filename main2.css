@@ -136,7 +136,7 @@
 }
   @media(min-width:300px){
   .frame{
-    height: 75vh;
+    height: 70vh;
   }
 }
 
@@ -148,6 +148,9 @@
     align-content: center;
     margin-left: 20%;
     width: 330px;
+  }
+    .frame{
+    height: 72vh;
   }
 
 }
