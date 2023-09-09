@@ -134,6 +134,11 @@
   grid-template-rows: 1fr 1fr;
 
 }
+  @media(min-width:300px){
+  .frame{
+    height: 75vh;
+  }
+}
 
 
 }
