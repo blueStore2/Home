@@ -73,21 +73,21 @@
 @media(min-width:300px) {
 
   .detail-product p{
-    grid-template-columns: 200px 100px;
+    grid-template-columns: 180px 100px;
   }
 
 }
 @media(min-width:400px) {
 
   .detail-product p{
-    grid-template-columns: 280px 100px;
+    grid-template-columns: 260px 100px;
   }
 
 }
 @media(min-width:500px) {
 
   .detail-product p{
-    grid-template-columns: 300px 100px;
+    grid-template-columns: 280px 100px;
   }
 
 }
