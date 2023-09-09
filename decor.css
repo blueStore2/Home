@@ -1,0 +1,75 @@
+.circle{
+  background:rgba(170,170,255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  margin-left: 30vw;
+  position: absolute;
+  z-index: -1;
+}
+
+.circle2{
+  background:rgba(170,170,255,0.1);
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 70vw;
+  position: absolute;
+  z-index: -1;
+  left:10px;
+
+}
+
+.circle-log{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background:rgba(170,170,255,0.1);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  z-index: -1;
+  left: 30px;
+  top:30px;
+  animation:animateItem2 3s linear infinite alternate;
+}
+.circle-log2{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background:rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  z-index: -1;
+  right: 60px;
+  bottom: 50px;
+  animation: animateItem1 3s linear infinite alternate;
+}
+
+@keyframes animateItem1{
+  0%{
+    transform: scale(0.9);
+  }
+  50%{
+    transform: scale(0.95);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@keyframes animateItem2{
+  0%{
+    left: 40px;
+    top:40px;
+  }
+  100%{
+    left: 38px;
+    top:37px;
+  }
+}

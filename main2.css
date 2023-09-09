@@ -1,0 +1,178 @@
+
+.right-sub{
+  margin-left: 10%;
+  position: relative;
+  width: 80vw;
+}
+
+
+.yt-sub{
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: animateOne 5s linear infinite ;
+ 
+}
+.sp-sub{
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  animation: animateThree 3s linear infinite;
+}
+.ig-sub{
+  position: absolute;
+  top: 40px;
+  right: 2px;
+  bottom: 50px;
+  animation: animateTwo 3s linear infinite;
+}
+.leftSub{
+  display: flex;
+  margin-top: 50px;
+  font-size: 34px;
+  color: white;
+  font-weight: bold;
+  align-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-justify: auto;
+  margin-bottom: 0;
+  height: 200px;
+  margin-left: 10%;
+}
+
+.contain-next{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  column-gap: 30px;
+  text-align: center;
+  font-size: 13px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 50px;
+  z-index: 4;
+}
+.neTwo{
+ 
+  text-decoration: none;
+  color:white;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 10px;
+  transition:background-color 0.15s,
+    color 0.3s,transform 0.3s;
+}
+.neOne{
+  
+  text-decoration: none;
+  color:#028090;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 10px;
+  transition:background-color 0.15s,
+    color 0.3s;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.neTwo:hover{
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #028090;
+  transform: scale(1.1);
+}
+.neTwo:active{
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #028090;
+  transform: scale(1.1);
+}
+
+.neOne:hover{
+  background-color:rgba(255, 255, 255, 0);
+  color: white;  
+  transform: scale(1.1);
+}
+.neOne:active{
+  background-color:rgba(255, 255, 255, 0);
+  color: white;
+  transform: scale(1.1);
+}
+
+
+
+
+
+@keyframes animateOne{
+  20%{
+    top: 10px;
+    left: -10px;
+  }
+  80%{
+    top: -10px;
+    left: 20px;
+  }
+}
+
+@keyframes animateTwo{
+  50%{
+    top: 30px;
+    right: 3px;
+    bottom: 40px;
+  }
+}
+
+@keyframes animateThree{
+  50%{
+    bottom: 0;
+    left: 0px;
+    right: 30px;
+  }
+}
+
+@media screen and (orientation:portrait) {
+.frame{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+}
+
+
+}
+@media(min-width:570px){
+  .right-sub{
+    align-items: center;
+    align-content: center;
+    margin-left: 20%;
+    width: 330px;
+  }
+
+}
+@media(min-width:780px){
+  .right-sub{
+    align-items: center;
+    align-content: center;
+    margin-left: 30%;
+    width: 330px;
+  }
+
+}
+@media(orientation:landscape){
+  .frame{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 90px;
+    row-gap: 10px;
+  }
+  .contain-next{
+    width: 400px;
+    margin-left: 30%;
+  }
+
+}
+@media (max-height: 740px) {
+  .contain-next{
+    margin-top: 0;
+  }
+  
+  
+  
+  }

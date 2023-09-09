@@ -1,0 +1,85 @@
+.wrap-vertial{
+  
+  display: grid;
+  grid-template-rows:1fr 3fr 3fr;
+  row-gap: 50px;
+}
+.wone{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 15px;
+  color: white;
+
+}
+.wtwo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 15px;
+  color:white;
+}
+.wone .sub-about1{
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  writing-mode: vertical-rl;
+  text-align: center;
+  text-shadow: 0 0 5px #06c5d3,0 0 10px #06c5d3,0 0 15px #06c5d3;
+
+}
+.wone .sub-about2{
+  display: grid;
+  grid-row: 1fr 5fr 5fr 5fr 1fr;
+  margin-left: 20px;
+
+}
+
+.wtwo .sub-about1{
+  display: grid;
+  grid-row: 1fr 5fr 5fr 5fr 1fr;
+  text-align: end;
+  margin-right: 20px;
+}
+.wrap-cont{
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}
+.wtwo .sub-about2{
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  writing-mode: vertical-rl;
+  text-align: center;
+  
+  text-shadow: 0 0 5px #06c5d3,0 0 10px #06c5d3,0 0 15px #06c5d3;
+}
+
+.til-sub{
+  border-left: 2px solid white;
+
+}
+.til-sub1{
+  border-right: 2px solid white;
+}
+body{
+  overflow: hidden;
+}
+
+@media (min-width:720px){
+  main{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .mar-top{
+    display: none;
+  }
+  .wrap-vertial{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    column-gap: 50px;
+    margin-top: 100px;
+  }
+}
